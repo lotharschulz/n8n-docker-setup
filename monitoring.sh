@@ -6,7 +6,7 @@ IFS=$'\n\t'
 docker exec n8n n8n --version || echo "Warning: could not check n8n version (container may not be running)."
 
 # View logs
-docker logs n8n || echo "Warning: could not check n8n version (container may not be running)."
+docker logs n8n || echo "Warning: could not retrieve logs (container may not exist if it was run with --rm)."
 
 # Follow logs in real-time
 docker logs -f n8n
