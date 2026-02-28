@@ -9,4 +9,4 @@ docker exec n8n n8n --version || echo "Warning: could not check n8n version (con
 docker logs n8n || echo "Warning: could not check n8n version (container may not be running)."
 
 # Follow logs in real-time
-docker logs -f n8n || echo "Warning: could not check n8n version (container may not be running)."
+docker logs -f n8n
