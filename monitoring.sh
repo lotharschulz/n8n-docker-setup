@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-# Check the docker image version
+# Check the n8n application version inside the container
 docker exec n8n n8n --version || echo "Warning: could not check n8n version (container may not be running). Continuing..."
 
 # View logs
